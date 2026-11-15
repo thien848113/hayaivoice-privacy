@@ -70,6 +70,23 @@
     .btn-outline {
       background: var(--card); color: var(--text); border: 1px solid var(--accent);
     }
+    .btn-paypal {
+      background: #0070ba; color: #ffffff; border: 1px solid #009cde;
+      box-shadow: 0 6px 18px rgba(0,112,186,0.28);
+    }
+    .btn-paypal:hover { background: #005ea6; }
+    .paypal-box {
+      background: linear-gradient(145deg, #101f33, #0c1524);
+      border: 1px solid rgba(0,156,222,0.55); border-radius: 18px;
+      padding: 22px 26px; margin-bottom: 28px;
+    }
+    .paypal-box h2 { margin: 0 0 10px; color: #38bdf8; font-size: 20px; }
+    .paypal-email-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,112,186,0.22); border: 1px solid #38bdf8;
+      padding: 6px 14px; border-radius: 10px; font-family: Consolas, monospace;
+      font-size: 15px; font-weight: 800; color: #fff; cursor: pointer;
+    }
     .grid-3 {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
       gap: 20px; margin-bottom: 38px;
@@ -153,7 +170,8 @@
             <li>Không bao gồm nâng cấp miễn phí khi ra phiên bản mới</li>
             <li>Nhận License Key tự động qua Email ngay sau khi thanh toán</li>
           </ul>
-          <a class="btn btn-outline" href="https://thienflare.gumroad.com/l/hayaivoice" target="_blank" rel="noopener">Mua Gói PRO ($30) ↗</a>
+          <a class="btn btn-outline" href="https://thienflare.gumroad.com/l/hayaivoice" target="_blank" rel="noopener">Mua Gói PRO ($30) — Tự động ↗</a>
+          <a class="btn btn-paypal" style="margin-top:9px;font-size:13.5px;padding:10px 16px;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=thien848113%40gmail.com&amp;item_name=HayaiVoice%20PRO%20Edition%20%28v2.2.0%29&amp;amount=30.00&amp;currency_code=USD&amp;no_shipping=1" target="_blank" rel="noopener">🅿️ Thanh toán qua PayPal ($30)</a>
         </div>
 
         <div class="plan popular">
@@ -166,8 +184,19 @@
             <li>Kích hoạt tối đa tới 3 máy tính cá nhân của bạn</li>
             <li>Nhận License Key tự động ngay tức thì (Visa, Mastercard, Apple Pay, Google Pay, PayPal)</li>
           </ul>
-          <a class="btn btn-gold" href="https://thienflare.gumroad.com/l/hayaivoice?wanted=true" target="_blank" rel="noopener">Mua Gói PREMIUM VIP ($50) ↗</a>
+          <a class="btn btn-gold" href="https://thienflare.gumroad.com/l/hayaivoice?wanted=true" target="_blank" rel="noopener">Mua Gói PREMIUM VIP ($50) — Tự động ↗</a>
+          <a class="btn btn-paypal" style="margin-top:9px;font-size:13.5px;padding:10px 16px;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=thien848113%40gmail.com&amp;item_name=HayaiVoice%20PREMIUM%20VIP%20%28Lifetime%20Updates%29&amp;amount=50.00&amp;currency_code=USD&amp;no_shipping=1" target="_blank" rel="noopener">🅿️ Thanh toán qua PayPal ($50)</a>
         </div>
+      </div>
+
+      <div class="paypal-box">
+        <h2>🅿️ Tùy chọn Thanh toán Trực tiếp qua Ví PayPal</h2>
+        <p style="margin:0 0 10px;color:var(--sub);">Ngoài cổng tự động 24/7 trên Gumroad, bạn có thể bấm nút <strong>🅿️ Thanh toán qua PayPal</strong> ở trên hoặc chuyển trực tiếp vào ví PayPal chính thức:</p>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px;">
+          <button type="button" class="paypal-email-pill" onclick="copyPayPal(this)">📧 thien848113@gmail.com <span style="font-size:12px;color:#38bdf8;">(Bấm sao chép)</span></button>
+          <a class="btn btn-paypal" style="padding:8px 16px;font-size:13.5px;" href="https://www.paypal.com/myaccount/transfer/homepage/pay" target="_blank" rel="noopener">Mở Ví PayPal Chuyển Tiền ↗</a>
+        </div>
+        <div style="font-size:13.5px;color:var(--sub);">💡 Ghi chú gói mua (<code>HayaiVoice PRO $30</code> hoặc <code>HayaiVoice PREMIUM $50</code>) kèm email nhận mã — mã bản quyền sẽ được gửi tới email PayPal của bạn!</div>
       </div>
 
       <div class="steps">
@@ -213,7 +242,8 @@
             <li>Future version updates not included</li>
             <li>Instant automated License Key via Gumroad &amp; Email</li>
           </ul>
-          <a class="btn btn-outline" href="https://thienflare.gumroad.com/l/hayaivoice" target="_blank" rel="noopener">Get PRO Edition ($30) ↗</a>
+          <a class="btn btn-outline" href="https://thienflare.gumroad.com/l/hayaivoice" target="_blank" rel="noopener">Get PRO Edition ($30) — Instant ↗</a>
+          <a class="btn btn-paypal" style="margin-top:9px;font-size:13.5px;padding:10px 16px;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=thien848113%40gmail.com&amp;item_name=HayaiVoice%20PRO%20Edition%20%28v2.2.0%29&amp;amount=30.00&amp;currency_code=USD&amp;no_shipping=1" target="_blank" rel="noopener">🅿️ Pay via PayPal ($30)</a>
         </div>
 
         <div class="plan popular">
@@ -226,8 +256,19 @@
             <li>Activate on up to 3 personal PCs</li>
             <li>Instant delivery via Card, Apple Pay, Google Pay, or PayPal</li>
           </ul>
-          <a class="btn btn-gold" href="https://thienflare.gumroad.com/l/hayaivoice?wanted=true" target="_blank" rel="noopener">Get PREMIUM VIP ($50) ↗</a>
+          <a class="btn btn-gold" href="https://thienflare.gumroad.com/l/hayaivoice?wanted=true" target="_blank" rel="noopener">Get PREMIUM VIP ($50) — Instant ↗</a>
+          <a class="btn btn-paypal" style="margin-top:9px;font-size:13.5px;padding:10px 16px;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=thien848113%40gmail.com&amp;item_name=HayaiVoice%20PREMIUM%20VIP%20%28Lifetime%20Updates%29&amp;amount=50.00&amp;currency_code=USD&amp;no_shipping=1" target="_blank" rel="noopener">🅿️ Pay via PayPal ($50)</a>
         </div>
+      </div>
+
+      <div class="paypal-box">
+        <h2>🅿️ Direct PayPal Wallet Transfer Option</h2>
+        <p style="margin:0 0 10px;color:var(--sub);">Prefer paying straight from your PayPal wallet? Use the <strong>🅿️ Pay via PayPal</strong> buttons above or send directly to our official PayPal email:</p>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px;">
+          <button type="button" class="paypal-email-pill" onclick="copyPayPal(this)">📧 thien848113@gmail.com <span style="font-size:12px;color:#38bdf8;">(Click to copy)</span></button>
+          <a class="btn btn-paypal" style="padding:8px 16px;font-size:13.5px;" href="https://www.paypal.com/myaccount/transfer/homepage/pay" target="_blank" rel="noopener">Open PayPal Send Money ↗</a>
+        </div>
+        <div style="font-size:13.5px;color:var(--sub);">💡 Include a note (<code>HayaiVoice PRO $30</code> or <code>HayaiVoice PREMIUM $50</code>) — your License Key will be delivered directly to your PayPal email!</div>
       </div>
 
       <div class="steps">
@@ -272,7 +313,8 @@
             <li>現行バージョン（<code>v2.2.0</code>）で永久利用可能</li>
             <li>将来の新バージョンへのアップデートは含まれません</li>
           </ul>
-          <a class="btn btn-outline" href="https://thienflare.gumroad.com/l/hayaivoice" target="_blank" rel="noopener">PRO版を購入 ($30) ↗</a>
+          <a class="btn btn-outline" href="https://thienflare.gumroad.com/l/hayaivoice" target="_blank" rel="noopener">PRO版を購入 ($30) — 即時自動発行 ↗</a>
+          <a class="btn btn-paypal" style="margin-top:9px;font-size:13.5px;padding:10px 16px;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=thien848113%40gmail.com&amp;item_name=HayaiVoice%20PRO%20Edition%20%28v2.2.0%29&amp;amount=30.00&amp;currency_code=USD&amp;no_shipping=1" target="_blank" rel="noopener">🅿️ PayPal で支払う ($30)</a>
         </div>
 
         <div class="plan popular">
@@ -284,8 +326,19 @@
             <li><strong>今後のすべての新バージョンへ永久無料アップデート！</strong></li>
             <li>個人のPC最大3台まで認証可能・即時キー自動発行</li>
           </ul>
-          <a class="btn btn-gold" href="https://thienflare.gumroad.com/l/hayaivoice?wanted=true" target="_blank" rel="noopener">PREMIUM VIPを購入 ($50) ↗</a>
+          <a class="btn btn-gold" href="https://thienflare.gumroad.com/l/hayaivoice?wanted=true" target="_blank" rel="noopener">PREMIUM VIPを購入 ($50) — 即時自動発行 ↗</a>
+          <a class="btn btn-paypal" style="margin-top:9px;font-size:13.5px;padding:10px 16px;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=thien848113%40gmail.com&amp;item_name=HayaiVoice%20PREMIUM%20VIP%20%28Lifetime%20Updates%29&amp;amount=50.00&amp;currency_code=USD&amp;no_shipping=1" target="_blank" rel="noopener">🅿️ PayPal で支払う ($50)</a>
         </div>
+      </div>
+
+      <div class="paypal-box">
+        <h2>🅿️ PayPal ウォレット直接送金オプション</h2>
+        <p style="margin:0 0 10px;color:var(--sub);">上の <strong>🅿️ PayPal で支払う</strong> ボタン、または以下の公式 PayPal アカウントへ直接送金することも可能です：</p>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px;">
+          <button type="button" class="paypal-email-pill" onclick="copyPayPal(this)">📧 thien848113@gmail.com <span style="font-size:12px;color:#38bdf8;">(クリックしてコピー)</span></button>
+          <a class="btn btn-paypal" style="padding:8px 16px;font-size:13.5px;" href="https://www.paypal.com/myaccount/transfer/homepage/pay" target="_blank" rel="noopener">PayPal 送金画面を開く ↗</a>
+        </div>
+        <div style="font-size:13.5px;color:var(--sub);">💡 メモ欄にご希望プラン（<code>HayaiVoice PRO $30</code> または <code>HayaiVoice PREMIUM $50</code>）をご記入ください。PayPal ご登録メールアドレス宛にライセンスキーをお送りします。</div>
       </div>
     </div>
 
@@ -298,6 +351,12 @@
     function setLang(code, btn) {
       document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('show', el.getAttribute('data-lang') === code));
       document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b === btn));
+    }
+    function copyPayPal(btn) {
+      navigator.clipboard.writeText('thien848113@gmail.com');
+      const old = btn.innerHTML;
+      btn.innerHTML = '✓ thien848113@gmail.com';
+      setTimeout(() => { btn.innerHTML = old; }, 2200);
     }
   </script>
 </body>
