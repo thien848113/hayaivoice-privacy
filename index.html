@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HayaiVoice — Chính Sách Quyền Riêng Tư | Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #100d0a;
+      --card: #1a1510;
+      --border: #3a2d1f;
+      --text: #fdf8f2;
+      --sub: #cabba8;
+      --accent: #f59e0b;
+      --ok: #10b981;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 36px 18px 64px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', Inter, system-ui, -apple-system, sans-serif;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 860px; margin: 0 auto; }
+    .hero {
+      padding: 24px 28px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #241b12, #18130e);
+      border: 1px solid var(--accent);
+      margin-bottom: 24px;
+    }
+    h1 { margin: 0 0 6px; font-size: 28px; color: var(--accent); }
+    h2 { margin: 0 0 10px; font-size: 19px; color: #fbbf24; }
+    .meta { font-size: 13.5px; color: var(--sub); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    ul { margin: 8px 0 0; padding-left: 20px; color: var(--sub); }
+    li { margin-bottom: 6px; }
+    p { margin: 6px 0; color: var(--sub); }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 99px;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--ok);
+      font-weight: 700;
+      font-size: 12.5px;
+      margin-bottom: 8px;
+    }
+    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <span class="badge">Manifest V3 Compliant · Local Loopback Protected</span>
+      <h1>HayaiVoice — Chính Sách Quyền Riêng Tư (Privacy Policy)</h1>
+      <div class="meta">Cập nhật lần cuối / Last updated: 2026-11-15 · Áp dụng cho tiện ích trình duyệt HayaiVoice (Chrome, Microsoft Edge, Cốc Cốc) và HayaiVoice Engine trên Windows.</div>
+    </div>
+
+    <div class="card">
+      <h2>1. Cam kết cốt lõi (Core Privacy Principle)</h2>
+      <p><strong>HayaiVoice KHÔNG thu thập, KHÔNG lưu trữ trên máy chủ riêng của nhà phát triển và KHÔNG bán bất kỳ dữ liệu cá nhân hay lịch sử duyệt web nào của người dùng.</strong></p>
+      <p>HayaiVoice does <strong>NOT</strong> collect, sell, rent, or store personal browsing history, account credentials, or personal identifiers on any developer-operated server.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Dữ liệu được xử lý và Mục đích duy nhất (Data Processed &amp; Single Purpose)</h2>
+      <ul>
+        <li><strong>Chỉ hoạt động khi người dùng chủ động bấm bật:</strong> Tiện ích chỉ sử dụng quyền <code>activeTab</code> và <code>scripting</code> trên đúng tab video mà người dùng bấm nút <em>“Bật trên tab này / Start on this tab”</em>.</li>
+        <li><strong>Văn bản phụ đề &amp; Khung hình OCR (khi bật):</strong> Văn bản phụ đề của video đang xem (hoặc ảnh cắt vùng phụ đề khi bạn chủ động bật tính năng OCR) được truyền qua kết nối cục bộ <code>http://127.0.0.1</code> sang ứng dụng <strong>HayaiVoice Engine</strong> chạy ngay trên máy tính Windows của chính bạn để dịch phụ đề và tổng hợp giọng lồng tiếng.</li>
+        <li><strong>Dịch vụ dịch thuật &amp; giọng đọc trực tuyến (khi được phép):</strong> Khi bạn bật tùy chọn cho phép xử lý văn bản bên ngoài trong cài đặt, HayaiVoice Engine chỉ gửi đoạn câu phụ đề ngắn cần dịch/đọc tới nhà cung cấp dịch thuật hoặc giọng đọc AI đã cấu hình để nhận bản dịch và âm thanh tức thời. Nếu bạn tắt tùy chọn này, toàn bộ quá trình chạy ngoại tuyến 100% trên máy tính bằng Argos Translate, Whisper và eSpeak NG.</li>
+        <li><strong>Lưu trữ cài đặt cục bộ (<code>storage</code>):</strong> Chỉ lưu ngôn ngữ giao diện, cặp ngôn ngữ dịch, mức âm lượng, vị trí hộp phụ đề và khóa ghép nối cục bộ ngay trên trình duyệt của bạn.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Bảo mật kết nối cục bộ &amp; Bản quyền (Local Security &amp; Licensing)</h2>
+      <ul>
+        <li>Kết nối giữa trình duyệt và HayaiVoice Engine chỉ giới hạn trên giao diện nội bộ <code>127.0.0.1</code> (loopback), được bảo vệ bằng mã ghép nối 8 chữ số ngẫu nhiên và khóa phiên riêng biệt.</li>
+        <li>Mã bản quyền Pro / Premium được kiểm chứng ngoại tuyến bằng chữ ký số bất đối xứng <code>Ed25519</code> ngay trên thiết bị của người dùng mà không cần gửi thông tin cá nhân đi đâu.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Tuân thủ Chính sách Sử dụng Hạn chế của Chrome Web Store (Limited Use Disclosure)</h2>
+      <p>Việc sử dụng thông tin nhận được từ các API của Chrome tuân thủ nghiêm ngặt <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" style="color:#fbbf24;">Chính sách Dữ liệu Người dùng của Cửa hàng Chrome Trực tuyến</a>, bao gồm các yêu cầu Sử dụng Hạn chế (Limited Use):</p>
+      <ul>
+        <li>Chúng tôi <strong>không</strong> bán hoặc chuyển dữ liệu người dùng cho bất kỳ bên thứ ba nào vì mục đích quảng cáo.</li>
+        <li>Chúng tôi <strong>không</strong> sử dụng dữ liệu người dùng cho các mục đích không liên quan đến mục đích duy nhất của tiện ích (dịch phụ đề và lồng tiếng video theo yêu cầu của người dùng).</li>
+        <li>Chúng tôi <strong>không</strong> sử dụng dữ liệu dữ liệu người dùng để đánh giá tín dụng hoặc cho vay.</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="card">
+      <h2>English Summary — Privacy Policy</h2>
+      <ul>
+        <li><strong>User-Initiated Only:</strong> HayaiVoice runs exclusively on the active tab where you explicitly click Start (via <code>activeTab</code> and <code>scripting</code>). It never monitors background tabs or browsing history.</li>
+        <li><strong>Local Windows Companion Processing:</strong> Video captions (and cropped subtitle frames only when you enable Hard-Sub OCR) are sent over encrypted-token local loopback (<code>http://127.0.0.1</code>) to your own Windows PC's HayaiVoice Engine.</li>
+        <li><strong>Optional Cloud Speech/Translation:</strong> Only when you keep external text processing enabled in settings will short subtitle lines be sent to configured translation/TTS providers solely to return real-time translations and neural speech. Turning it off keeps 100% of processing offline on your device.</li>
+        <li><strong>Zero Tracking / Zero Data Sales:</strong> No analytics SDKs, no remote scripts, no advertising trackers, and zero sale or transfer of user data.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
